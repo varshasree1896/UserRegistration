@@ -9,6 +9,12 @@ public class UserRegistrationTest {
         boolean check = UserRegistration.firstName("Varsha");
         Assertions.assertSame(true, check);
     }
+    @Test
+    public void checkValidName1() {
+        boolean check = UserRegistration.lastName("Sree");
+        Assertions.assertSame(true, check);
+    }
+
 }
 
 
