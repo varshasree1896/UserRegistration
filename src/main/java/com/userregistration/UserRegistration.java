@@ -17,6 +17,11 @@ public class UserRegistration {
         boolean check = Pattern.matches("^(.+)@(.+)$", email);
         return check;
     }
+    public static boolean mobileNumber(String number) {
+        boolean check = Pattern.matches("^[91]{2} [0-9]{10}$", number);
+        return check;
+    }
+
 
 
 
