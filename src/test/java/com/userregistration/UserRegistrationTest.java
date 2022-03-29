@@ -24,6 +24,11 @@ public class UserRegistrationTest {
         boolean check = UserRegistration.mobileNumber("91 9397341248");
         Assertions.assertSame(true, check);
     }
+    @Test
+    public void checkValidPassword() {
+        boolean check = UserRegistration.password("Vaa@13");
+        Assertions.assertSame(true, check);
+    }
 
 }
 

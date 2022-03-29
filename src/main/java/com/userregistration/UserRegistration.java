@@ -21,9 +21,8 @@ public class UserRegistration {
         boolean check = Pattern.matches("^[91]{2} [0-9]{10}$", number);
         return check;
     }
-
-
-
-
-
+    public static boolean password(String pass) {
+        boolean check = Pattern.matches("^[A-Za-z]{3}@[0-9]{2}$", pass);
+        return check;
+    }
 }
