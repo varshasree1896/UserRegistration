@@ -14,6 +14,11 @@ public class UserRegistrationTest {
         boolean check = UserRegistration.lastName("Sree");
         Assertions.assertSame(true, check);
     }
+    @Test
+    public void checkValidEmail() {
+        boolean check = UserRegistration.emailId("abc.xyz@bl.co.in");
+        Assertions.assertSame(true, check);
+    }
 
 }
 

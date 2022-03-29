@@ -13,6 +13,11 @@ public class UserRegistration {
         boolean check = Pattern.matches("([A-Z][a-z]{3,})", name);
         return check;
     }
+    public static boolean emailId(String email) {
+        boolean check = Pattern.matches("^(.+)@(.+)$", email);
+        return check;
+    }
+
 
 
 
